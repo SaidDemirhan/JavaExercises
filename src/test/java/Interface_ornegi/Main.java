@@ -20,6 +20,7 @@ public class Main {
         evcilHayvan.beslen();       //kuslar da beslenir:)
         evcilHayvan.sesCikar();     //cik cik
         // evcilHayvan.uc(); methooduna buradan ulasamayiz.
+
         /*
         Hayvan sınıfı ve Kus sınıfı arasındaki ilişki belirtilmeden yapılan bu tanımlama,
         Kus sınıfının Hayvan sınıfından türettiği anlamına gelir.

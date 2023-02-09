@@ -12,3 +12,7 @@ public class Main {
         sporAraba.sunroof();       //Arabada Sunroof var
     }
 }
+
+/*
+methodlari kullandik...
+ */
