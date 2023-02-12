@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.OptionalInt;
+
 import java.util.stream.Collectors;
 
 public class Lambda {
@@ -49,10 +50,35 @@ public class Lambda {
         int sum = numbers2.stream()
                 .reduce(0, (x, y) -> x + y);
 
+        System.out.println("toplam: "+sum);
+
         //tüm sayilarin toplamini hesaplar
 
 
+        //-------------------sorted---------------------------
 
+        List<Integer> numbers3 = Arrays.asList(9, 2, 6, 1, 7, 3, 8, 5, 4);
+
+        List<Integer> sortedNumbers = numbers3.stream()
+                .sorted((c, d) -> d.compareTo(c))
+                .collect(Collectors.toList());
+
+        sortedNumbers.stream().forEach(System.out::println);
+
+        //büyükten kücüge dogru siralar.
+
+        //--------------------flatMap-------------------------
+
+        List<List<String>> words = Arrays.asList(Arrays.asList("Java", "Python","C++", "JavaScript"));
+
+        List<Integer> wordLengths = words.stream()
+                .flatMap(List::stream)
+                .map(String::length)
+                .collect(Collectors.toList());
+
+        wordLengths.stream().forEach(System.out::println);
+
+        //her bir elemanin uzunlugundan olusan bir list olusturur.
 
     }
 }
