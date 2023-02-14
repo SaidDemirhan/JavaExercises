@@ -43,7 +43,7 @@ public class Lambda {
 
         //tek sayilari filtreler.
 
-        //---------------------reduce-------------------------
+        //---------------------reduce------------------------
 
         List<Integer> numbers2 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
@@ -55,7 +55,7 @@ public class Lambda {
         //tüm sayilarin toplamini hesaplar
 
 
-        //-------------------sorted---------------------------
+        //-------------------sorted--------------------------
 
         List<Integer> numbers3 = Arrays.asList(9, 2, 6, 1, 7, 3, 8, 5, 4);
 
@@ -67,7 +67,7 @@ public class Lambda {
 
         //büyükten kücüge dogru siralar.
 
-        //--------------------flatMap-------------------------
+        //--------------------flatMap------------------------
 
         List<List<String>> words = Arrays.asList(Arrays.asList("Java", "Python","C++", "JavaScript"));
 
